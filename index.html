@@ -31,6 +31,11 @@
     <script>window.Telegram.WebApp.setBottomBarColor("#050624");
       window.Telegram.WebApp.setHeaderColor("#050624");
       window.Telegram.WebApp.disableVerticalSwipes();
+      const tg = window.Telegram.WebApp;
+      tg.ready();
+      setTimeout(() => {
+            tg.expand();
+          }, 100);
     </script>
   </body>
 </html>
